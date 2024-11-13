@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query | Traevel Co.</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Traevel Corporation </h1>
+
+        <h3>Navigate to:</h3>
+        <a href="index.html"><img src="https://cdn-icons-png.freepik.com/512/7893/7893979.png" alt="plane logo"
+                width="50px"></a>
+        <ul>
+            <li>
+                <p><a href="loginForm.html">Login Page</a></p>
+            </li>
+            <li hidden>
+                <p><a href="queryForm.html">Travels Page</a></p>
+            </li>
+            <li>
+                <p><a href="blog.html">Personal Blog</a></p>
+            </li>
+        </ul>
+
+        <br>
+        <br>
+
+        <nav>
+            <h2>Naviguoti i Skilti</h2>
+            <a href="index.html#article1">
+                <h3>Kelionių pasiūlymai</h3>
+            </a>
+            <a href="index.html#article2">
+                <h3>Patarimai / rekomendacijos keliaujantiems</h3>
+            </a>
+            <a href="index.html#article3">
+                <h3>Autonuomos pasiūlymai</h3>
+            </a>
+            <a href="index.html#article4">
+                <h3>Kelionių žurnalas</h3>
+            </a>
+        </nav>
+
+    </header>
+
+    <form action="">
+        <!--Name and Email-->
+        <div>
+            <input type="text" name="Varkas" id="name" required>
+            <input type="email" name="E-Mail" id="email" required>
+        </div>
+
+        <!--Phone Number and Date-->
+        <div>
+            <input type="tel" name="Phone Number" id="phone" required>
+            <input type="date" name="Data" id="date" required>
+        </div>
+
+        <!--Gender-->
+        <select name="Gender" id="gender" required>
+            <option value="placeholder" disabled>Pasirink savo lytį</option>
+            <option value="Male">Vyras</option>
+            <option value="Female">Moteris</option>
+            <option value="Prefer not to say">Nenoriu sakyti</option>
+        </select>
+
+        <!--Luggage-->
+        <select name="luggage" id="luggage" required>
+            <option value="placeholder" disabled>Pasirinkite kokį bagažą su savimi turėsite</option>
+            <option value="hand">Rankinis</option>
+            <option value="baggage">1 lagaminas</option>
+            <option value="baggage1">Duagiau negu 1 lagaminas</option>
+        </select>
+        <br>
+
+        <!--Probable disturbances-->
+        <fieldset>
+            <legend>Prašome pasirikti vieną</legend>
+
+            <input type="checkbox" name="disturbances" id="disabilities">I have any disabilities. <br>
+            <input type="checkbox" name="disturbances" id="pets">I have pets.<br>
+            <input type="checkbox" name="disturbances" id="children">I have children.<br>
+            <input type="checkbox" name="disturbances" id="alergies">I have allergies.<br>
+        </fieldset>
+
+
+        <!--City of Origin-->
+        <fieldset>
+            <legend>Iš kurio miesto esi</legend>
+
+            <input type="radio" name="lives" id="" required>Kaunas<br>
+            <input type="radio" name="lives" id="" required>Vilnius<br>
+            <input type="radio" name="lives" id="" required>Klaipėda<br>
+            <input type="radio" name="lives" id="" required>Palanga<br>
+        </fieldset>
+
+        <!--Self description-->
+        <textarea name="describe" id="description" cols="30" rows="10" placeholder="Papasakokite apie save"
+            required></textarea><br>
+
+        <!--Submit-->
+        <input type="submit" name="submit" id="querySubmit">
+    </form>
+
+
+</body>
+
+</html>

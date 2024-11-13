@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: gray;
+	font-size: 20px;
+}
+
+.textContainer {
+	width: 5.5vw;
+	letter-spacing: 0.15rem;
+	color: aqua;
+}
+
+.textWriting1 {
+	overflow: hidden;
+	border-right: 2px solid rgb(0, 192, 192);
+	margin: 0 auto;
+	white-space: nowrap;
+	animation-name: typing, blinking;
+	animation-duration: 2s, 0.5s;
+	animation-timing-function: steps(10, end), step-end;
+	animation-iteration-count: 1, 4;
+	animation-fill-mode: forwards, forwards;
+}
+
+.textWriting2 {
+	overflow: hidden;
+	border: none;
+	width: 0%;
+	margin: 0 auto;
+	animation-name: typing, blinking;
+	animation-delay: 2s;
+	animation-duration: 2s, 0.5s;
+	animation-timing-function: steps(10, end), step-end;
+	animation-iteration-count: 1, 4;
+	animation-fill-mode: forwards, forwards;
+}
+
+@keyframes typing {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes blinking {
+	from,
+	to {
+		border-right: 2px solid rgb(0, 192, 192);
+		border-color: transparent;
+	}
+	50% {
+		border-color: rgb(0, 192, 192);
+	}
+}
+
+.container {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	gap: 5vh;
+	width: 100%;
+}
+
+.container span {
+	display: flex;
+	width: 70%;
+	transform: translateX(-95%);
+	border-radius: 25px;
+	height: 50px;
+	background-color: white;
+	justify-content: center;
+	transition: transform 0.25s linear, border-radius 0.25s linear;
+}
+
+.text {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.container span:hover {
+	transform: translateX(-20%);
+	border-radius: 0;
+}
+
+.container2 {
+	position: relative;
+	width: 20vw;
+}
+
+.textReveal1 {
+	background-color: white;
+	overflow: hidden;
+	border: none;
+	width: 0%;
+	margin: 0 auto;
+	/* animation-name: blanket;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1; */
+}
+
+.textReveal2 {
+	background-color: white;
+	transform: translateY(45px);
+	overflow: hidden;
+	border: none;
+	height: 1.5rem;
+	width: 0%;
+	margin: 0 auto;
+	animation-name: blanket;
+	animation-delay: 2s;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+}
+
+@keyframes reveal {
+	from {
+		display: none;
+	}
+	to {
+		display: block;
+	}
+}
+
+@keyframes blanket {
+	from {
+		margin: 0;
+		width: 0%;
+	}
+	50% {
+		width: 100%;
+	}
+	90% {
+		/* margin: 0 0 0 100%; */
+	}
+	to {
+		/* margin: 0 0 0 100%; */
+		width: 0%;
+	}
+}

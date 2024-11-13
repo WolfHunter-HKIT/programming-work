@@ -1,0 +1,11 @@
+@function chgBackground($width) {
+	@if $width <= 767 {
+		@return red;
+	} @else if $width <= 1023 {
+		@return green;
+	} @else if $width > 1023 {
+		@return blue;
+	} @else {
+		@return orange;
+	}
+}

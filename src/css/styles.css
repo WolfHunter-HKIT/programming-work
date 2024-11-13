@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat%20Brush:700|Roboto:400"); /* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); /* Inria Sans */
+
+/* Body Fonts */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray; /* !!REMOVE AFTER!! */
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #310505;
+}
+
+/* Header Fonts */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inria Sans";
+  font-weight: 700;
+}
+
+/* Text sizes */
+html {
+  font-size: 100%;
+} /* 16px */
+h1 {
+  font-size: 4.521rem; /* 72.32px */
+}
+h2 {
+  font-size: 3.197rem; /* 51.2px */
+}
+h3 {
+  font-size: 2.261rem; /* 36.16px */
+}
+h4 {
+  font-size: 1.599rem; /* 25.6px */
+}
+h5 {
+  font-size: 1.131rem; /* 18.08px */
+}
+small {
+  font-size: 0.566rem; /* 9.12px */
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 0.5vh 8vw;
+  border: 2px solid black; /* !!DELETE AFTER!! */
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  width: 20vw;
+  padding: 0;
+}
+
+#navigation a {
+  height: 3vh;
+  margin: auto;
+  line-height: 200%;
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+  color: inherit;
+}
+
+#searchbar {
+  height: 4vh;
+  border-radius: 5px;
+  border: 2px solid #310505;
+}

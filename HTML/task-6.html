@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="confirmation.html" id="užsakyti" method="POST">
+        <header>Užsisakyk Dovaną</header>
+
+        <label for="Vardas">Vardas</label><br>
+        <input type="text" name="Vardas" id=""><br><br>
+
+        <label for="Pavardė">Pavardė</label><br>
+        <input type="text" name="Pavardė" id=""><br><br>
+
+        <label for="El.Paštas">El.Paštas</label><br>
+        <input type="email" name="El.Paštas" id=""><br><br>
+
+        <label for="Slaptažodis">Slaptažodis</label><br>
+        <input type="password" name="Slaptažodis" id=""><br><br>
+
+        <fieldset>
+            <legend>Adresas</legend>
+
+            <label for="Gatvė">Gatvė</label><br>
+            <input type="text" name="Gatvė" id=""><br>
+
+            <label for="Namoe Numeris">Namo Numeris</label><br>
+            <input type="number" name="Namo Numeris" id=""><br><br>
+
+            <label for="Miestas">Miestas</label><br>
+            <select name="Miestas" id="">
+                <option value="kaunas">Kaunas</option>
+                <option value="vilnius">Vilnius</option>
+                <option value="klaipeda">Klaipėda</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Apmokėjimo būdas</legend>
+
+            <input type="radio" name="payType" id="Paypal">
+            <label for="Paypal">Paypal</label><br>
+
+            <input type="radio" name="payType" id="SEB">
+            <label for="SEB">SEB</label><br>
+
+            <input type="radio" name="payType" id="Bitcoin">
+            <label for="Bitcoin">Bitcoin</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dovanėlės</legend>
+            <input type="checkbox" name="Laikrodis" id="">
+            <label for="Laikrodis">Laikrodis</label><br>
+
+            <input type="checkbox" name="Ausines" id="">
+            <label for="Ausines">Ausines</label><br>
+
+            <input type="checkbox" name="Rieduciai" id="">
+            <label for="Rieduciai">Rieduciai</label><br>
+
+            <input type="checkbox" name="Pirstines" id="">
+            <label for="Pirstines">Pirstines</label><br>
+        </fieldset>
+
+        <textarea name="Komentarai/pastabos" id="" cols="30" rows="10" disabled
+            placeholder="Komentarai/Pastabos"></textarea><br>
+
+        <button type="submit" form="užsakyti">Užsakyti</button>
+
+    </form>
+
+</body>
+
+</html>

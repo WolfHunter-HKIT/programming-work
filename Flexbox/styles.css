@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  background-color: green;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  gap: 20px;
+}
+
+article:first-of-type {
+  align-items: flex-start;
+  width: 30vw;
+}
+
+article:last-of-type {
+  width: 70vw;
+}
+
+div,
+nav,
+footer,
+article:last-of-type article {
+  background-color: green;
+  width: 100%;
+  height: 100px;
+}
+
+nav,
+div {
+  flex-grow: 1;
+}
+
+article:last-of-type article {
+  flex-grow: 4;
+}
+
+footer {
+  flex-grow: 1;
+}

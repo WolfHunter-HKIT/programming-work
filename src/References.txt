@@ -1,0 +1,22 @@
+[Color Codes/Fonts]
+@import url('https://fonts.googleapis.com/css?family=Caveat%20Brush:700|Roboto:400');
+
+//Body Fonts
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+//Header Fonts
+h1, h2, h3, h4, h5 {
+  font-family: 'Caveat Brush';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+h1 {font-size: 4.521rem; /* 72.32px */}
+h2 {font-size: 3.197rem; /* 51.2px */}
+h3 {font-size: 2.261rem; /* 36.16px */}
+h4 {font-size: 1.599rem; /* 25.6px */}
+h5 {font-size: 1.131rem; /* 18.08px */}
+small {font-size: 0.566rem; /* 9.12px */}
