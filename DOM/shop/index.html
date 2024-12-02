@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id='body'>
+    <section class="control">
+        <form action="" id="createItem">
+            <h2>Insert New Item</h2>
+            <input type="number" name="id" id="id" placeholder="Product ID">
+            <input type="text" name="name" id="name" placeholder="Product Name">
+            <input type="number" name="quantity" id="quantity" placeholder="Product Quantity">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <form action="" id="editItem">
+            <h2>Control Existing Item</h2>
+            <input type="number" name="" id="selector" placeholder="Select Item ID">
+            <div>
+                <button id="deleteItem">Delete</button>
+                <button id="updateItem">Update</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="display" id="display">
+        <article id="existing"></article>
+        <article id="editing"></article>
+    </section>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

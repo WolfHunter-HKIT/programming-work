@@ -290,252 +290,252 @@
 // console.log(thirdArray);
 
 // pratybos 1.
-const carArray = [
-	"BMW",
-	"Audi",
-	"Tesla",
-	"Solaris",
-	"Volkswagen",
-	"Toyota",
-	"Bentley",
-];
+// const carArray = [
+// 	"BMW",
+// 	"Audi",
+// 	"Tesla",
+// 	"Solaris",
+// 	"Volkswagen",
+// 	"Toyota",
+// 	"Bentley",
+// ];
 
-if (!carArray.includes("Bentley")) {
-	console.log(`Masyve nėra Bentley`);
-	carArray.push("Bentley");
-} else {
-	console.log(`Masyve yra Bentley`);
-}
+// if (!carArray.includes("Bentley")) {
+// 	console.log(`Masyve nėra Bentley`);
+// 	carArray.push("Bentley");
+// } else {
+// 	console.log(`Masyve yra Bentley`);
+// }
 
-// pratybos 2.
-const groceries = [6, 5, 8, 8, 1, 2, 1, 6, 2, 7, 8, 1, 2, 5, 9, 8, 6];
-const uniqueGroceries = [];
+// // pratybos 2.
+// const groceries = [6, 5, 8, 8, 1, 2, 1, 6, 2, 7, 8, 1, 2, 5, 9, 8, 6];
+// const uniqueGroceries = [];
 
-for (let i = 0; i < groceries.length; i++) {
-	if (uniqueGroceries.indexOf(groceries[i]) == -1) {
-		uniqueGroceries.push(groceries[i]);
-	}
-}
+// for (let i = 0; i < groceries.length; i++) {
+// 	if (uniqueGroceries.indexOf(groceries[i]) == -1) {
+// 		uniqueGroceries.push(groceries[i]);
+// 	}
+// }
 
-console.log(uniqueGroceries);
+// console.log(uniqueGroceries);
 
-// pratybos 3.
-const fruits = [
-	"Apples",
-	"Dragon fruits",
-	"Grapes",
-	"Apples",
-	"Lemon",
-	"Grapes",
-	"Pears",
-	"Dragon fruits",
-	"Grapes",
-	"Watermelon",
-	"Tangerine",
-];
-const uniqueFruits = [];
+// // pratybos 3.
+// const fruits = [
+// 	"Apples",
+// 	"Dragon fruits",
+// 	"Grapes",
+// 	"Apples",
+// 	"Lemon",
+// 	"Grapes",
+// 	"Pears",
+// 	"Dragon fruits",
+// 	"Grapes",
+// 	"Watermelon",
+// 	"Tangerine",
+// ];
+// const uniqueFruits = [];
 
-for (let i = 0; i < fruits.length; i++) {
-	if (!uniqueFruits.includes(fruits[i])) {
-		uniqueFruits.push(fruits[i]);
-	}
-}
+// for (let i = 0; i < fruits.length; i++) {
+// 	if (!uniqueFruits.includes(fruits[i])) {
+// 		uniqueFruits.push(fruits[i]);
+// 	}
+// }
 
-console.log(uniqueFruits);
+// console.log(uniqueFruits);
 
-// pratybos 4
-const numbers = [
-	37, 91, 56, 62, 61, 34, 32, 42, 48, 69, 95, 24, 59, 64, 45, 74, 96, 29, 80,
-	33, 63, 55, 83,
-];
-const names = [
-	"Vytautas",
-	"Raivydas",
-	"Ignas",
-	"Salvinas",
-	"Viktorija",
-	"Gytis",
-];
+// // pratybos 4
+// const numbers = [
+// 	37, 91, 56, 62, 61, 34, 32, 42, 48, 69, 95, 24, 59, 64, 45, 74, 96, 29, 80,
+// 	33, 63, 55, 83,
+// ];
+// const names = [
+// 	"Vytautas",
+// 	"Raivydas",
+// 	"Ignas",
+// 	"Salvinas",
+// 	"Viktorija",
+// 	"Gytis",
+// ];
 
-for (let i = 0; i < numbers.length; i++) {
-	if (numbers[i] % 2 == 0) {
-		let rngInt = Math.floor(Math.random() * (names.length - 0)) + 0;
-		numbers.splice(i, 1, names[rngInt].toUpperCase());
-		console.log(`Spliced ${names[rngInt]}`);
-	}
-}
-console.log(numbers);
+// for (let i = 0; i < numbers.length; i++) {
+// 	if (numbers[i] % 2 == 0) {
+// 		let rngInt = Math.floor(Math.random() * (names.length - 0)) + 0;
+// 		numbers.splice(i, 1, names[rngInt].toUpperCase());
+// 		console.log(`Spliced ${names[rngInt]}`);
+// 	}
+// }
+// console.log(numbers);
 
-// pratybos 4.1
+// // pratybos 4.1
 
-let duomenys = {
-	id: "0001",
-	type: "donut",
-	name: "Cake",
-	ppu: 0.55,
-	topping: [
-		{ id: "5001", type: "None" },
-		{ id: "5002", type: "Glazed" },
-		{ id: "5005", type: "Sugar" },
-		{ id: "5007", type: "Powdered Sugar" },
-		{ id: "5006", type: "Chocolate with Sprinkles" },
-		{ id: "5003", type: "Chocolate" },
-		{ id: "5004", type: "Maple" },
-	],
-};
+// let duomenys = {
+// 	id: "0001",
+// 	type: "donut",
+// 	name: "Cake",
+// 	ppu: 0.55,
+// 	topping: [
+// 		{ id: "5001", type: "None" },
+// 		{ id: "5002", type: "Glazed" },
+// 		{ id: "5005", type: "Sugar" },
+// 		{ id: "5007", type: "Powdered Sugar" },
+// 		{ id: "5006", type: "Chocolate with Sprinkles" },
+// 		{ id: "5003", type: "Chocolate" },
+// 		{ id: "5004", type: "Maple" },
+// 	],
+// };
 
-for (let i = 0; i < duomenys.topping.length; i++) {
-	console.log(
-		`id: ${duomenys.topping[i].id}, type: ${duomenys.topping[i].type}`
-	);
-}
+// for (let i = 0; i < duomenys.topping.length; i++) {
+// 	console.log(
+// 		`id: ${duomenys.topping[i].id}, type: ${duomenys.topping[i].type}`
+// 	);
+// }
 
-// pratybos 5.1
-let knygos = [
-	{
-		isbn: 9786098233346,
-		price: 7.99,
-		year: 2006,
-		title: "Bloga dukte",
-		pagecount: 250,
-	},
-	{
-		isbn: 9786098233391,
-		price: 7.99,
-		year: 2015,
-		title: "Mergina kuria jis pazinojo",
-		pagecount: 315,
-	},
-	{
-		isbn: 9786099609324,
-		price: 7.99,
-		year: 2019,
-		title: "Tapk ragana",
-		pagecount: 150,
-	},
-	{
-		isbn: 9786094792250,
-		price: 6.99,
-		year: 2007,
-		title: "Sfera",
-		pagecount: 450,
-	},
-	{
-		isbn: 9786094792335,
-		price: 9.99,
-		year: 2019,
-		title: "Mes susitinkame cia",
-		pagecount: 500,
-	},
-	{
-		isbn: 9786094273780,
-		price: 7.99,
-		year: 2019,
-		title: "Sunaikinimas",
-		pagecount: 509,
-	},
-	{
-		isbn: 9786098233483,
-		price: 12.99,
-		year: 2018,
-		title: "Artemide",
-		pagecount: 199,
-	},
-	{
-		isbn: 9786094273872,
-		price: 4.99,
-		year: 2015,
-		title: "Fondas ir imperija",
-		pagecount: 185,
-	},
-	{
-		isbn: 9786094273902,
-		price: 7.99,
-		year: 2019,
-		title: "Amzinybes fjordo pranasai",
-		pagecount: 333,
-	},
-	{
-		isbn: 9786094442742,
-		price: 5.99,
-		year: 2004,
-		title: "Bejegiai",
-		pagecount: 777,
-	},
-	{
-		isbn: 9786094442940,
-		price: 14.99,
-		year: 2019,
-		title: "Klajunai",
-		pagecount: 172,
-	},
-	{
-		isbn: 9786090404386,
-		price: 7.99,
-		year: 2015,
-		title: "Mergina, kuri pakliuvo i voratinkli",
-		pagecount: 356,
-	},
-];
+// // pratybos 5.1
+// let knygos = [
+// 	{
+// 		isbn: 9786098233346,
+// 		price: 7.99,
+// 		year: 2006,
+// 		title: "Bloga dukte",
+// 		pagecount: 250,
+// 	},
+// 	{
+// 		isbn: 9786098233391,
+// 		price: 7.99,
+// 		year: 2015,
+// 		title: "Mergina kuria jis pazinojo",
+// 		pagecount: 315,
+// 	},
+// 	{
+// 		isbn: 9786099609324,
+// 		price: 7.99,
+// 		year: 2019,
+// 		title: "Tapk ragana",
+// 		pagecount: 150,
+// 	},
+// 	{
+// 		isbn: 9786094792250,
+// 		price: 6.99,
+// 		year: 2007,
+// 		title: "Sfera",
+// 		pagecount: 450,
+// 	},
+// 	{
+// 		isbn: 9786094792335,
+// 		price: 9.99,
+// 		year: 2019,
+// 		title: "Mes susitinkame cia",
+// 		pagecount: 500,
+// 	},
+// 	{
+// 		isbn: 9786094273780,
+// 		price: 7.99,
+// 		year: 2019,
+// 		title: "Sunaikinimas",
+// 		pagecount: 509,
+// 	},
+// 	{
+// 		isbn: 9786098233483,
+// 		price: 12.99,
+// 		year: 2018,
+// 		title: "Artemide",
+// 		pagecount: 199,
+// 	},
+// 	{
+// 		isbn: 9786094273872,
+// 		price: 4.99,
+// 		year: 2015,
+// 		title: "Fondas ir imperija",
+// 		pagecount: 185,
+// 	},
+// 	{
+// 		isbn: 9786094273902,
+// 		price: 7.99,
+// 		year: 2019,
+// 		title: "Amzinybes fjordo pranasai",
+// 		pagecount: 333,
+// 	},
+// 	{
+// 		isbn: 9786094442742,
+// 		price: 5.99,
+// 		year: 2004,
+// 		title: "Bejegiai",
+// 		pagecount: 777,
+// 	},
+// 	{
+// 		isbn: 9786094442940,
+// 		price: 14.99,
+// 		year: 2019,
+// 		title: "Klajunai",
+// 		pagecount: 172,
+// 	},
+// 	{
+// 		isbn: 9786090404386,
+// 		price: 7.99,
+// 		year: 2015,
+// 		title: "Mergina, kuri pakliuvo i voratinkli",
+// 		pagecount: 356,
+// 	},
+// ];
 
-let family = {
-	grandparents: {
-		grandma: "Marge",
-		grandpa: "Homer",
-	},
-	parents: {
-		mom: "Lisa",
-		dad: "Millhouse",
-	},
-	children: {
-		daughter: "Anne",
-		son1: "Peter",
-		son2: "Bob",
-	},
-};
+// let family = {
+// 	grandparents: {
+// 		grandma: "Marge",
+// 		grandpa: "Homer",
+// 	},
+// 	parents: {
+// 		mom: "Lisa",
+// 		dad: "Millhouse",
+// 	},
+// 	children: {
+// 		daughter: "Anne",
+// 		son1: "Peter",
+// 		son2: "Bob",
+// 	},
+// };
 
-for (let element in family) {
-	console.log(`${element}: ${Object.values(family[element])}`);
-}
+// for (let element in family) {
+// 	console.log(`${element}: ${Object.values(family[element])}`);
+// }
 
-console.log("-----------------------------------");
-for (let i = 0; i < knygos.length; i++) {
-	console.log(`isbn --> ${knygos[i].isbn}`);
-	console.log(`price --> ${knygos[i].price}`);
-	console.log(`year --> ${knygos[i].year}`);
-	console.log(`title --> ${knygos[i].title}`);
-	console.log(`pagecount --> ${knygos[i].pagecount}`);
-	console.log("-----------------------------------");
-}
+// console.log("-----------------------------------");
+// for (let i = 0; i < knygos.length; i++) {
+// 	console.log(`isbn --> ${knygos[i].isbn}`);
+// 	console.log(`price --> ${knygos[i].price}`);
+// 	console.log(`year --> ${knygos[i].year}`);
+// 	console.log(`title --> ${knygos[i].title}`);
+// 	console.log(`pagecount --> ${knygos[i].pagecount}`);
+// 	console.log("-----------------------------------");
+// }
 
-const recentBooks = [];
+// const recentBooks = [];
 
-for (let element in knygos) {
-	console.log(element);
-	if (knygos[element].year > 2015) {
-		recentBooks.push(knygos[element].title);
-	}
-}
-console.log(`${recentBooks}`);
+// for (let element in knygos) {
+// 	console.log(element);
+// 	if (knygos[element].year > 2015) {
+// 		recentBooks.push(knygos[element].title);
+// 	}
+// }
+// console.log(`${recentBooks}`);
 
-let filtered = knygos
-	.filter((book) => book.year > 2015)
-	.map((book) => book.title);
-console.log(`${filtered}`);
+// let filtered = knygos
+// 	.filter((book) => book.year > 2015)
+// 	.map((book) => book.title);
+// console.log(`${filtered}`);
 
-// pratybos 6.1
-const familyTotal = [147, 312, 58];
-for (let i = 0; i < familyTotal.length; i++) {
-	if (familyTotal[i] < 50) {
-		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.2;
-	}
-	if (familyTotal[i] > 50 && familyTotal[i] < 200) {
-		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.15;
-	} else {
-		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.1;
-	}
-}
-console.log(familyTotal);
+// // pratybos 6.1
+// const familyTotal = [147, 312, 58];
+// for (let i = 0; i < familyTotal.length; i++) {
+// 	if (familyTotal[i] < 50) {
+// 		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.2;
+// 	}
+// 	if (familyTotal[i] > 50 && familyTotal[i] < 200) {
+// 		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.15;
+// 	} else {
+// 		familyTotal[i] = familyTotal[i] + familyTotal[i] * 0.1;
+// 	}
+// }
+// console.log(familyTotal);
 
 // // pratybos 7.1
 // const questions1 = [
@@ -799,94 +799,150 @@ console.log(familyTotal);
 // 	}
 // }
 
-// pratybos 7.2
-// 5 questions, 4 choices each
-const trivia = [
-	{
-		question: "What is the best-selling video game of all time?",
-		answers: [
-			{ text: "Minecraft", isCorrect: true },
-			{ text: "Tetris", isCorrect: false },
-			{ text: "Grand Theft Auto V", isCorrect: false },
-			{ text: "The Legend of Zelda: Breath of the Wild", isCorrect: false },
-		],
-	},
-	{
-		question: "In which year was the first 'Call of Duty' game released?",
-		answers: [
-			{ text: "2005", isCorrect: false },
-			{ text: "2003", isCorrect: true },
-			{ text: "2001", isCorrect: false },
-			{ text: "2007", isCorrect: false },
-		],
-	},
-	{
-		question: "Which game features the fictional city of Los Santos?",
-		answers: [
-			{ text: "Watch Dogs", isCorrect: false },
-			{ text: "Cyberpunk 2077", isCorrect: false },
-			{ text: "Grand Theft Auto V", isCorrect: true },
-			{ text: "The Sims", isCorrect: false },
-		],
-	},
-	{
-		question: "What is the main objective in the game 'Pac-Man'?",
-		answers: [
-			{ text: "Eat all the dots while avoiding ghosts", isCorrect: true },
-			{ text: "Defeat bosses", isCorrect: false },
-			{ text: "Build structures", isCorrect: false },
-			{ text: "Collect coins", isCorrect: false },
-		],
-	},
-	{
-		question: "Which console was released by Sony in 1994?",
-		answers: [
-			{ text: "Nintendo 64", isCorrect: false },
-			{ text: "PlayStation", isCorrect: true },
-			{ text: "Sega Saturn", isCorrect: false },
-			{ text: "Xbox", isCorrect: false },
-		],
-	},
-];
-let correctAnsw = 0;
-let incorrectAnsw = 0;
-const letterCheck = ["A", "B", "C", "D"];
+// // pratybos 7.2
+// // 5 questions, 4 choices each
+// const trivia = [
+// 	{
+// 		question: "What is the best-selling video game of all time?",
+// 		answers: [
+// 			{ text: "Minecraft", isCorrect: true },
+// 			{ text: "Tetris", isCorrect: false },
+// 			{ text: "Grand Theft Auto V", isCorrect: false },
+// 			{ text: "The Legend of Zelda: Breath of the Wild", isCorrect: false },
+// 		],
+// 	},
+// 	{
+// 		question: "In which year was the first 'Call of Duty' game released?",
+// 		answers: [
+// 			{ text: "2005", isCorrect: false },
+// 			{ text: "2003", isCorrect: true },
+// 			{ text: "2001", isCorrect: false },
+// 			{ text: "2007", isCorrect: false },
+// 		],
+// 	},
+// 	{
+// 		question: "Which game features the fictional city of Los Santos?",
+// 		answers: [
+// 			{ text: "Watch Dogs", isCorrect: false },
+// 			{ text: "Cyberpunk 2077", isCorrect: false },
+// 			{ text: "Grand Theft Auto V", isCorrect: true },
+// 			{ text: "The Sims", isCorrect: false },
+// 		],
+// 	},
+// 	{
+// 		question: "What is the main objective in the game 'Pac-Man'?",
+// 		answers: [
+// 			{ text: "Eat all the dots while avoiding ghosts", isCorrect: true },
+// 			{ text: "Defeat bosses", isCorrect: false },
+// 			{ text: "Build structures", isCorrect: false },
+// 			{ text: "Collect coins", isCorrect: false },
+// 		],
+// 	},
+// 	{
+// 		question: "Which console was released by Sony in 1994?",
+// 		answers: [
+// 			{ text: "Nintendo 64", isCorrect: false },
+// 			{ text: "PlayStation", isCorrect: true },
+// 			{ text: "Sega Saturn", isCorrect: false },
+// 			{ text: "Xbox", isCorrect: false },
+// 		],
+// 	},
+// ];
 
-function triviaGame(quest) {
-	let answer = prompt(`${trivia[quest].question}\n
-		A: ${trivia[quest].answers[0].text}\n
-		B: ${trivia[quest].answers[1].text}\n
-		C: ${trivia[quest].answers[2].text}\n
-		D: ${trivia[quest].answers[3].text}`);
-	if (!letterCheck.includes(answer)) {
-		console.log("Tai nėra pasiringimas. Bandyk Vėl.");
-		triviaGame(quest);
+// let correctAnsw = 0;
+// let incorrectAnsw = 0;
+// const letterCheck = ["A", "B", "C", "D"];
+
+// function triviaGame(quest) {
+// 	let correctAnswerStr = "";
+
+// 	for (let i = 0; i < trivia[quest].answers.length; i++) {
+// 		if (trivia[quest].answers[i].isCorrect == true) {
+// 			correctAnswerStr = trivia[quest].answers[i].text;
+// 		}
+// 	}
+
+// 	let answer = prompt(`${trivia[quest].question}\n
+// 		A: ${trivia[quest].answers[0].text}\n
+// 		B: ${trivia[quest].answers[1].text}\n
+// 		C: ${trivia[quest].answers[2].text}\n
+// 		D: ${trivia[quest].answers[3].text}`);
+
+// 	do {
+// 		if (!letterCheck.includes(answer)) {
+// 			alert("Tai nėra pasirinkimas. Bandyk Vėl.");
+// 			answer = prompt(`${trivia[quest].question}\n
+// 			A: ${trivia[quest].answers[0].text}\n
+// 			B: ${trivia[quest].answers[1].text}\n
+// 			C: ${trivia[quest].answers[2].text}\n
+// 			D: ${trivia[quest].answers[3].text}`);
+// 		}
+// 	} while (!letterCheck.includes(answer));
+
+// 	switch (answer) {
+// 		case "A":
+// 			answer = 0;
+// 			break;
+// 		case "B":
+// 			answer = 1;
+// 			break;
+// 		case "C":
+// 			answer = 2;
+// 			break;
+// 		case "D":
+// 			answer = 3;
+// 			break;
+// 	}
+
+// 	if (trivia[quest].answers[answer].isCorrect) {
+// 		alert(`Teisingai!\nTeisingas atsakymas yra: ${correctAnswerStr}`);
+// 		correctAnsw++;
+// 	} else {
+// 		alert(`Neteisingai.\nTeisingas atsakymas yra: ${correctAnswerStr}`);
+// 		incorrectAnsw++;
+// 	}
+// }
+
+// let randomQuestions = [];
+// for (let i = 0; i < trivia.length; i++) {
+// 	randomQuestions.push(i);
+// }
+
+// for (let i = 0; i < trivia.length; i++) {
+// 	let randomChoice = Math.floor(Math.random() * randomQuestions.length);
+// 	triviaGame(randomQuestions[randomChoice]);
+// 	randomQuestions.splice(randomChoice, 1);
+// }
+
+// if (correctAnsw > incorrectAnsw) {
+// 	alert(
+// 		`Sveikiname! Jūs teisingai atsakėte į ${correctAnsw}, o neteisingai į ${incorrectAnsw}`
+// 	);
+// } else {
+// 	alert(
+// 		`Jūs teisingai atsakėte į ${correctAnsw}, o neteisingai į ${incorrectAnsw}. Sėkmės kitą kartą.`
+// 	);
+// }
+
+import randomNumGen from "./modules/randomNumGen.js";
+import randomLetterGen from "./modules/randomLetterGen.js";
+// Nested Arrays 1.
+const nestArray1 = [];
+
+for (let i = 0; i < 10; i++) {
+	let importArray = [];
+	for (let j = 0; j < randomNumGen(2, 20, "int"); j++) {
+		importArray.push(randomLetterGen("a", "Z"));
 	}
-	switch (answer) {
-		case "A":
-			answer = 0;
-			break;
-		case "B":
-			answer = 1;
-			break;
-		case "C":
-			answer = 2;
-			break;
-		case "D":
-			answer = 3;
-			break;
-	}
-	console.log(answer);
-	if (trivia[quest].answers[answer].isCorrect == true) {
-		console.log("Teisingai!");
-		correctAnsw++;
-	} else {
-		console.log("Neteisingai, bandyg vėl.");
-		incorrectAnsw--;
-		triviaGame(quest);
+	nestArray1.push(importArray.sort());
+}
+
+for (let i = 0; i < nestArray1.length; i++) {
+	let j = i;
+	while (nestArray1[j] < nestArray1[j - 1]) {
+		let popped = nestArray1.pop();
+		nestArray1.splice(j, 0, popped);
 	}
 }
 
-for (let i = 0; i < trivia.length; i++) {
-	triviaGame(i);
-}
+console.log(nestArray1);
