@@ -7,40 +7,65 @@ body {
 	background-color: gray;
 }
 
-form {
-	margin: 10vh auto;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	gap: 2vh;
-	align-items: center;
-	input {
-		width: 300px;
-		font-size: 1.5vw;
-	}
-	button {
-		width: 10vw;
-		height: 35px;
-		font-size: 1.5vw;
-		border-radius: 10px;
-		&:hover {
-			cursor: pointer;
-			background-color: bisque;
-		}
-	}
-}
-
 .control {
 	display: flex;
 	h2 {
 		font-size: 2rem;
 		color: white;
 		text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+		margin-bottom: 2vh;
+	}
+	#controlButtons {
+		display: flex;
+		gap: 5vw;
+	}
+
+	form {
+		margin: 10vh auto;
+		width: 45%;
+		flex-shrink: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 5px solid rgb(150, 56, 131);
+		border-radius: 20px;
+		padding: 2%;
+		&:last-child {
+			height: 50%;
+		}
+
+		label {
+			align-self: flex-start;
+			margin-bottom: 0;
+			color: white;
+			font-size: 2vw;
+			text-shadow: 0 0 10px #9decf4;
+		}
+		input {
+			align-self: flex-start;
+			width: 100%;
+			font-size: 2vw;
+			border: 3px solid rgb(174, 174, 255);
+			border-radius: 5px;
+			margin-bottom: 3vh;
+		}
+		button {
+			width: 10vw;
+			height: 5vh;
+			font-size: 1.5vw;
+			border-radius: 10px;
+			&:hover {
+				cursor: pointer;
+				background-color: bisque;
+			}
+		}
 	}
 }
 
 .display {
 	display: flex;
+	justify-content: center;
+	gap: 10vw;
 	margin: 5vh 2vw;
 	color: white;
 	font-size: 2rem;
@@ -54,6 +79,18 @@ table {
 		padding: 5px 10px;
 		border: 6px solid black;
 		text-align: center;
+	}
+}
+
+#updateField {
+	display: flex;
+	justify-content: center;
+	gap: 25%;
+	input {
+		width: 100px;
+		&::placeholder {
+			text-align: center;
+		}
 	}
 }
 

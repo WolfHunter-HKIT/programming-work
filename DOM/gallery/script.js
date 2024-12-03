@@ -1,23 +1,38 @@
 let hearts = document.getElementsByClassName("heart");
+let heartsStorage = [];
+
+function fetchLocalStorage() {
+	if (localStorage.getItem("favorites") != null) {
+		heartsStorage = localStorage.getItem("favorites");
+		heartsStorage = JSON.parse(heartsStorage);
+		console.log("Fetched", heartsStorage);
+	}
+}
+fetchLocalStorage();
 
 for (let i = 0; i < hearts.length; i++) {
+	let id = hearts[i].getAttribute("id");
 	// Checks if there were any favorited images.
-	if (localStorage.getItem(hearts[i].getAttribute("id")) != null) {
+	if (heartsStorage.includes(id)) {
 		hearts[i].classList.toggle("colored");
 	}
 	// Adds an event listener to each heart
 	hearts[i].addEventListener("click", () => {
-		// Checks if the heart was not favorited
-		if (localStorage.getItem(hearts[i].getAttribute("id")) == null) {
-			hearts[i].classList.toggle("colored");
-			localStorage.setItem(hearts[i].getAttribute("id"), "favorite");
-			console.log(`Favorited ${hearts[i].getAttribute("id")}`);
-		}
+		let id = hearts[i].getAttribute("id");
+		fetchLocalStorage();
 		// Checks if the heart was favorited
+		if (heartsStorage.includes(id)) {
+			hearts[i].classList.toggle("colored");
+			heartsStorage.splice(heartsStorage.indexOf(id), 1);
+			console.log(`Unavorited ${id}`);
+		}
+		// Checks if the heart was not favorited
 		else {
 			hearts[i].classList.toggle("colored");
-			localStorage.removeItem(hearts[i].getAttribute("id"));
-			console.log(`Unfavorited ${hearts[i].getAttribute("id")}`);
+			heartsStorage.push(id);
+			console.log(`Favorited ${id}`);
 		}
+		console.log(heartsStorage);
+		localStorage.setItem("favorites", JSON.stringify(heartsStorage));
 	});
 }

@@ -11,20 +11,25 @@
 
 <body id='body'>
     <section class="control">
-        <form action="" id="createItem">
-            <h2>Insert New Item</h2>
-            <input type="number" name="id" id="id" placeholder="Product ID">
-            <input type="text" name="name" id="name" placeholder="Product Name">
-            <input type="number" name="quantity" id="quantity" placeholder="Product Quantity">
-            <button type="submit" id="submit">Submit</button>
-        </form>
-        <form action="" id="editItem">
-            <h2>Control Existing Item</h2>
-            <input type="number" name="" id="selector" placeholder="Select Item ID">
-            <div>
-                <button id="deleteItem">Delete</button>
-                <button id="updateItem">Update</button>
+        <form action="" id="controlPanel">
+            <h2>Control Panel</h2>
+            <label for="id">Product ID</label>
+            <input type="number" name="id" id="id">
+            <label for="name">Product Name</label>
+            <input type="text" name="name" id="name">
+            <label for="id">Product Quantity</label>
+            <input type="number" name="quantity" id="quantity">
+            <div id="controlButtons">
+                <button id="insert">Insert Item</button>
+                <button id="insert">Edit Item</button>
+                <button id="insert">Delete Item</button>
             </div>
+        </form>
+        <form action="" id="shoppingCart">
+            <h2>Shopping Cart</h2>
+            <label for="cart">Select Item ID</label>
+            <input type="number" name="cart" id="cart">
+            <button id="addToCart">Add to Cart</button>
         </form>
     </section>
 
