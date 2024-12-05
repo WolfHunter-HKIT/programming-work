@@ -1,145 +1,123 @@
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: gray;
+  background-color: rgb(117, 156, 162);
+}
+body h1 {
+  margin-top: 2vh;
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  text-shadow: 0 0 6px #d900ff, 0 0 10px #0000ff;
 }
 
-.control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.control h2 {
+h2 {
+  text-align: center;
   font-size: 2rem;
   color: white;
   text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
-  margin-bottom: 2vh;
 }
 
+.control {
+  display: flex;
+}
 .control #controlButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 5vw;
 }
-
 .control form {
-  margin: 10vh auto;
+  margin: 10vh auto 5vh;
+  background-color: rgb(54, 81, 85);
   width: 45%;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-shrink: 1;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 5px solid #963883;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(150, 56, 131);
   border-radius: 20px;
   padding: 2%;
 }
-
 .control form:last-child {
   height: 50%;
 }
-
 .control form label {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   margin-bottom: 0;
   color: white;
   font-size: 2vw;
   text-shadow: 0 0 10px #9decf4;
 }
-
 .control form input {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   width: 100%;
   font-size: 2vw;
-  border: 3px solid #aeaeff;
+  border: 3px solid rgb(174, 174, 255);
   border-radius: 5px;
   margin-bottom: 3vh;
 }
-
 .control form button {
   width: 10vw;
   height: 5vh;
   font-size: 1.5vw;
   border-radius: 10px;
 }
-
 .control form button:hover {
   cursor: pointer;
   background-color: bisque;
 }
 
 .display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10vw;
-  margin: 5vh 2vw;
+  justify-content: center;
   color: white;
   font-size: 2rem;
+  margin-bottom: 5vh;
 }
 
 table {
+  height: 100%;
   margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgb(54, 81, 85);
+  border-radius: 10px 10px 0px 0px;
 }
-
 table th,
 table td {
-  min-width: 150px;
+  min-width: 250px;
   padding: 5px 10px;
-  border: 6px solid black;
+  border: 4px solid black;
   text-align: center;
+  font-size: 1.8vw;
+}
+table th:first-child,
+table td:first-child {
+  min-width: 50px;
+  border-left: none;
+}
+table th:last-child,
+table td:last-child {
+  min-width: 50px;
+  border-right: none;
+}
+table th {
+  border-top: none;
+  text-shadow: 0 0 10px #9decf4;
 }
 
 #updateField {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 25%;
 }
-
 #updateField input {
   width: 100px;
 }
-
-#updateField input::-webkit-input-placeholder {
+#updateField input::-moz-placeholder {
   text-align: center;
 }
-
-#updateField input:-ms-input-placeholder {
-  text-align: center;
-}
-
-#updateField input::-ms-input-placeholder {
-  text-align: center;
-}
-
 #updateField input::placeholder {
   text-align: center;
-}
-
-#error {
-  color: red;
-  font-size: 1.5vw;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

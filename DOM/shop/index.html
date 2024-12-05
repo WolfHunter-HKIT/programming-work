@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+	<body id="body">
+		<h1>Vanilla JS & localStorage CRUD Project</h1>
+		<section class="control">
+			<form action="" id="controlPanel">
+				<h2>Control Panel</h2>
+				<label for="id">Product ID</label>
+				<input type="number" name="id" id="id" />
+				<label for="name">Product Name</label>
+				<input type="text" name="name" id="name" />
+				<label for="id">Product Quantity</label>
+				<input type="number" name="quantity" id="quantity" />
+				<div id="controlButtons">
+					<button id="insertItem">Insert Item</button>
+					<button id="editItem">Edit Item</button>
+					<button id="deleteItem">Delete Item</button>
+				</div>
+			</form>
+			<form action="" id="shoppingCart">
+				<h2>Shopping Cart</h2>
+				<label for="cartSelect">Select Item ID</label>
+				<input type="number" name="cartSelect" id="cartSelect" />
+				<button id="addToCart">Add to Cart</button>
+			</form>
+		</section>
 
-<body id='body'>
-    <section class="control">
-        <form action="" id="controlPanel">
-            <h2>Control Panel</h2>
-            <label for="id">Product ID</label>
-            <input type="number" name="id" id="id">
-            <label for="name">Product Name</label>
-            <input type="text" name="name" id="name">
-            <label for="id">Product Quantity</label>
-            <input type="number" name="quantity" id="quantity">
-            <div id="controlButtons">
-                <button id="insert">Insert Item</button>
-                <button id="insert">Edit Item</button>
-                <button id="insert">Delete Item</button>
-            </div>
-        </form>
-        <form action="" id="shoppingCart">
-            <h2>Shopping Cart</h2>
-            <label for="cart">Select Item ID</label>
-            <input type="number" name="cart" id="cart">
-            <button id="addToCart">Add to Cart</button>
-        </form>
-    </section>
+		<section class="display" id="display">
+			<table id="storage">
+				<thead>
+					<tr>
+						<th colspan="3"><h2>Database</h2></th>
+					</tr>
+					<tr>
+						<th>Product ID</th>
+						<th>Product name</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+			</table>
+			<table id="cart">
+				<thead>
+					<th colspan="3"><h2>Shopping List</h2></th>
+					<tr>
+						<th>Product ID</th>
+						<th>Product name</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+			</table>
+		</section>
 
-    <section class="display" id="display">
-        <article id="existing"></article>
-        <article id="editing"></article>
-    </section>
-
-    <script type="module" src="script.js"></script>
-</body>
-
+		<script type="module" src="script.js"></script>
+	</body>
 </html>
